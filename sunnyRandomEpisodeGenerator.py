@@ -34,6 +34,6 @@ epTitles = {
             (13,6): "The Gang Solves the Bathroom Problem",(13,7) : "The Gang Does a Clip Show",(13,8): "Charlie's Home Alone",(13,9) : "The Gang Wins the Big Game",(13,10): "Mac Finds His Pride"
                 }
 season = int(input("Enter a season between 1 and 13 or 0 for random season: "))
-keys = list(filter(lambda x: season==0 or x[0]==season, epTitles.keys()))
+epKeys = list(filter(lambda x: season == 0 or x[0] == season, epTitles.epKeys()))
 print('Season', season)
-print('Random episode: {}'.format(epTitles[random.choice(keys)]))
+print('Random episode: {}'.format(epTitles[random.choice(epKeys)]))
